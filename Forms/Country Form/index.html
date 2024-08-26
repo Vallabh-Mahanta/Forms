@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Country Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <h2>Country Form</h2>
+      <form>
+        <label for="countryName">Country Name:</label>
+        <input
+          type="text"
+          placeholder="e.g., India, United States"
+          id="countryName"
+          name="countryName"
+          required
+          pattern="[A-Za-z\s]+"
+          title="Please enter a valid country name"
+        />
+
+        <label for="flagUrl">Flag URL:</label>
+        <input
+          type="file"
+          accept="image/jpeg, image/png, image/jpg, image/gif, application/pdf"
+          name="myfile"
+          id="file"
+        />
+        <input
+          type="text"
+          placeholder="Enter the flag URL here"
+          id="flagUrl"
+          name="flagUrl"
+        />
+
+        <label for="currencyName">Currency Name:</label>
+        <input
+          type="text"
+          id="currencyName"
+          name="currencyName"
+          placeholder="e.g., Indian Rupee, US Dollar"
+          required
+        />
+
+        <label for="currencySymbol">Currency Symbol:</label>
+        <input type="text" placeholder="e.g., ₹, $" id="currencySymbol" name="currencySymbol" required/>
+
+        <label for="status">Status:</label>
+        <select id="status" name="status">
+          <option value="Active">Active</option>
+          <option value="Inactive">Inactive</option>
+        </select>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>

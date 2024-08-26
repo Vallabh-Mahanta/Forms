@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+</body>
+</html>
+<div class="form-container">
+    <h1>Project Tracking Form</h1>
+    <form>
+        <div class="form-group">
+            <label for="project-id">Project ID:</label>
+            <input type="text" id="project-id" name="project-id" placeholder="Unique identifier for the project." required>
+        </div>
+
+        <div class="form-group">
+            <label for="project-name">Project Name:</label>
+            <input type="text" id="project-name" name="project-name" placeholder="Name of the project." required>
+        </div>
+
+        <div class="form-group">
+            <label for="start-date">Start Date:</label>
+            <input type="date" id="start-date" name="start-date" required>
+        </div>
+
+        <div class="form-group">
+            <label for="end-date">End Date:</label>
+            <input type="date" id="end-date" name="end-date" placeholder="Expected end date of the project." required>
+        </div>
+
+        <div class="form-group">
+            <label for="status">Status:</label>
+            <select id="status" name="status" required>
+                <option value="" disabled selected>Status of the project</option>
+                <option value="Not Started">Not Started</option>
+                <option value="In Progress">In Progress</option>
+                <option value="Completed">Completed</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="assigned-to">Assigned To:</label>
+            <input type="text" id="assigned-to" name="assigned-to" placeholder="Name of the person/team assigned to the project." required>
+        </div>
+
+        <div class="form-group">
+            <label for="milestones">Milestones:</label>
+            <textarea id="milestones" name="milestones" placeholder="Key milestones in the project." required></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="remarks">Remarks:</label>
+            <textarea id="remarks" name="remarks" placeholder="Any additional remarks or notes."></textarea>
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+</div>

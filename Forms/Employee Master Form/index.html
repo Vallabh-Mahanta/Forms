@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body></body>
+</html>
+<div class="form-container">
+  <h1>Employee Master Form</h1>
+  <form>
+    <div class="form-group">
+      <label for="employee-id">Employee ID:</label>
+      <input
+        type="text"
+        id="employee-id"
+        name="employee-id"
+        placeholder="Unique identifier for the employee."
+        required
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="first-name">First Name:</label>
+      <input
+        type="text"
+        id="first-name"
+        name="first-name"
+        placeholder="Employee’s first name."
+        required
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="last-name">Last Name:</label>
+      <input
+        type="text"
+        id="last-name"
+        name="last-name"
+        placeholder="Employee’s last name."
+        required
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="designation">Designation:</label>
+      <input
+        type="text"
+        id="designation"
+        name="designation"
+        placeholder="Designation of the employee."
+        required
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="department">Department:</label>
+      <input
+        type="text"
+        id="department"
+        name="department"
+        placeholder="Department to which the employee belongs."
+        required
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="joining-date">Joining Date:</label>
+      <input type="date" id="joining-date" name="joining-date" required />
+    </div>
+
+    <div class="form-group">
+      <label for="contact-number">Contact Number:</label>
+      <input
+        type="tel"
+        id="contact-number"
+        name="contact-number"
+        placeholder="Contact number of the employee."
+        required
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Email address of the employee."
+        required
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="status">Status:</label>
+      <select id="status" name="status" required>
+        <option value="" disabled selected>Status of the employee</option>
+        <option value="Active">Active</option>
+        <option value="Inactive">Inactive</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="remarks">Remarks:</label>
+      <textarea
+        id="remarks"
+        name="remarks"
+        placeholder="Any additional remarks or notes."
+      ></textarea>
+    </div>
+
+    <button type="submit">Submit</button>
+  </form>
+</div>

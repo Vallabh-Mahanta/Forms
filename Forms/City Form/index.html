@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>City Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <form>
+        <h2>City Form</h2>
+        <label for="countryID">Country ID:</label>
+        <input
+          type="text"
+          id="title"
+          name="cityName"
+          placeholder="Enter Country Id"
+          required
+          pattern="[A-Za-z\s]+"
+          title="Please enter a valid country ID"
+        />
+
+        <label for="stateID">State ID:</label>
+        <input
+          type="text"
+          id="title"
+          name="cityName"
+          placeholder="Enter State Id"
+          required
+          pattern="[A-Za-z\s]+"
+          title="Please enter a valid State ID"
+        />
+
+        <label for="cityName">City Name:</label>
+        <input
+          type="text"
+          id="title"
+          name="cityName"
+          placeholder="Enter city name"
+          required
+          pattern="[A-Za-z\s]+"
+          title="Please enter a valid City name"
+        />
+
+        <label for="status">Status:</label>
+        <select id="title" name="status" required>
+          <option value="Active">Select Status</option>
+          <option value="Active">Active</option>
+          <option value="Inactive">Inactive</option>
+        </select>
+
+        <label for="zone">Zone:</label>
+        <select id="title" name="zone" required>
+          <option value="">Select a zone</option>
+          <option value="North">North</option>
+          <option value="South">South</option>
+          <option value="East">East</option>
+          <option value="West">West</option>
+        </select>
+
+        <center><button type="submit">Submit</button></center>
+      </form>
+    </div>
+  </body>
+</html>

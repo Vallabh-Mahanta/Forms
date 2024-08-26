@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+</body>
+</html>
+<div class="form-container">
+    <h1>Machine Master Form</h1>
+    <form>
+        <div class="form-group">
+            <label for="machine-id">Machine ID:</label>
+            <input type="text" id="machine-id" name="machine-id" required placeholder="Unique identifier for the machine.
+            ">
+        </div>
+
+        <div class="form-group">
+            <label for="machine-name">Machine Name:</label>
+            <input type="text" id="machine-name" name="machine-name" required placeholder="Name of the machine.
+            ">
+        </div>
+
+        <div class="form-group">
+            <label for="type">Type:</label>
+            <input type="text" id="type" name="type" placeholder="e.g., CNC, Lathe" required>
+        </div>
+
+        <div class="form-group">
+            <label for="manufacturer">Manufacturer:</label>
+            <input type="text" id="manufacturer" name="manufacturer" required placeholder="Name of the manufacturer.
+            ">
+        </div>
+
+        <div class="form-group">
+            <label for="date-of-purchase">Date of Purchase:</label>
+            <input type="date" id="date-of-purchase" name="date-of-purchase" required>
+        </div>
+
+        <div class="form-group">
+            <label for="cost">Cost:</label>
+            <input type="number" id="cost" name="cost" required placeholder="Cost of the machine.">
+        </div>
+
+        <div class="form-group">
+            <label for="maintenance-schedule">Maintenance Schedule:</label>
+            <input type="text" id="maintenance-schedule" name="maintenance-schedule" required placeholder="Schedule for regular maintenance.">
+        </div>
+
+        <div class="form-group">
+            <label for="status">Status:</label>
+            <select id="status" name="status" required>
+                <option value="Active">Active</option>
+                <option value="Under Maintenance">Under Maintenance</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" required placeholder=" Location of the machine within the facility."> 
+        </div>
+
+        <div class="form-group">
+            <label for="remarks">Remarks:</label>
+            <textarea id="remarks" name="remarks" placeholder="Any additional remarks or notes.
+            "></textarea>
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+</div>

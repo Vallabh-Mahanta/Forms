@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+</body>
+</html>
+<div class="form-container">
+    <h1>Material Master Form</h1>
+    <form>
+        <div class="form-group">
+            <label for="material-id">Material ID:</label>
+            <input type="text" id="material-id" name="material-id" required placeholder="Unique identifier for the material.">
+        </div>
+
+        <div class="form-group">
+            <label for="material-name">Material Name:</label>
+            <input type="text" id="material-name" name="material-name" required placeholder="Name of the material.
+            ">
+        </div>
+
+        <div class="form-group">
+            <label for="supplier">Supplier:</label>
+            <input type="text" id="supplier" name="supplier" required placeholder="Name of the supplier.
+            ">
+        </div>
+
+        <div class="form-group">
+            <label for="cost">Cost:</label>
+            <input type="number" id="cost" name="cost" required placeholder="Cost per unit of the material.
+            ">
+        </div>
+
+        <div class="form-group">
+            <label for="quantity-in-stock">Quantity in Stock:</label>
+            <input type="number" id="quantity-in-stock" name="quantity-in-stock" required placeholder="Current stock quantity.
+            ">
+        </div>
+
+        <div class="form-group">
+            <label for="minimum-stock-level">Minimum Stock Level:</label>
+            <input type="number" id="minimum-stock-level" name="minimum-stock-level" required placeholder="Minimum required stock level.
+            ">
+        </div>
+
+        <div class="form-group">
+            <label for="reorder-level">Reorder Level:</label>
+            <input type="number" id="reorder-level" name="reorder-level" required placeholder=" Level at which the material should be reordered.">
+        </div>
+
+        <div class="form-group">
+            <label for="status">Status:</label>
+            <select id="status" name="status" required>
+                <option value="Active">Active</option>
+                <option value="Inactive">Inactive</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="remarks">Remarks:</label>
+            <textarea id="remarks" name="remarks" placeholder=" Any additional remarks or notes.
+            "></textarea>
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+</div>

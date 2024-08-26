@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <h2>User Form</h2>
+      <form>
+        <label for="username">Username:</label>
+        <input
+          type="text"
+          placeholder="Enter your Username"
+          id="username"
+          name="username"
+          required 
+          title="Please enter your Username"
+        />
+
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          placeholder="Enter your Mail ID :"
+          id="email"
+          name="email"
+          required
+          pattern="[A-Za-z\s]+"
+          title="Please enter a valid Mail ID"
+        />
+
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          placeholder="Enter your Password"
+          id="password"
+          name="password"
+          required
+          pattern="[A-Za-z\s]+"
+          title="Please enter your password "
+        />
+
+        <label for="firstName">First Name:</label>
+        <input
+          type="text"
+          placeholder="Enter your Name"
+          id="firstName"
+          name="firstName"
+          required
+          pattern="[A-Za-z\s]+"
+          title="Please enter a valid Valid First Name"
+        />
+
+        <label for="lastName">Last Name:</label>
+        <input
+          type="text"
+          placeholder="Enter your Last Name"
+          id="lastName"
+          name="lastName"
+          required
+          pattern="[A-Za-z\s]+"
+          title="Please enter a valid Last Name "
+        />
+
+        <label for="role">Role:</label>
+        <select id="role" name="role">
+          <option value="Admin">Admin</option>
+          <option value="User">User</option>
+        </select>
+
+        <label for="status">Status:</label>
+        <select id="status" name="status">
+          <option value="Active">Active</option>
+          <option value="Inactive">Inactive</option>
+        </select>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>

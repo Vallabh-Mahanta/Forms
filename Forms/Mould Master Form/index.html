@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mould Master Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+</body>
+</html>
+<div class="form-container">
+    <h1>Mould Master Form</h1>
+    <form>
+        <div class="form-group">
+            <label for="mould-id">Mould ID:</label>
+            <input type="text" id="mould-id" name="mould-id" required placeholder="Unique identifier for the mould.
+            ">
+        </div>
+
+        <div class="form-group">
+            <label for="mould-name">Mould Name:</label>
+            <input type="text" id="mould-name" name="mould-name" required placeholder="Name of the mould.
+            ">
+        </div>
+
+        <div class="form-group">
+            <label for="material">Material:</label>
+            <input type="text" id="material" name="material" required placeholder=" Material used for the mould.
+            ">
+        </div>
+
+        <div class="form-group">
+            <label for="dimensions">Dimensions:</label>
+            <input type="text" id="dimensions" name="dimensions" placeholder="L x W x H" required>
+        </div>
+
+        <div class="form-group">
+            <label for="weight">Weight:</label>
+            <input type="number" id="weight" name="weight" required placeholder="Weight of the mould.
+            ">
+        </div>
+
+        <div class="form-group">
+            <label for="manufacturer">Manufacturer:</label>
+            <input type="text" id="manufacturer" name="manufacturer" required placeholder="Name of the manufacturer.
+            ">
+        </div>
+
+        <div class="form-group">
+            <label for="cost">Cost:</label>
+            <input type="number" id="cost" name="cost" required placeholder="Cost of the mould.
+            ">
+        </div>
+
+        <div class="form-group">
+            <label for="status">Status:</label>
+            <select id="status" name="status" required>
+                <option value="Active">Active</option>
+                <option value="Inactive">Inactive</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="date-of-manufacture">Date of Manufacture:</label>
+            <input type="date" id="date-of-manufacture" name="date-of-manufacture" required>
+        </div>
+
+        <div class="form-group">
+            <label for="life-span">Life Span:</label>
+            <input type="text" id="life-span" name="life-span" required placeholder="Expected lifespan of the mould.
+            ">
+        </div>
+
+        <div class="form-group">
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" required placeholder=" Storage location of the mould.
+            ">
+        </div>
+
+        <div class="form-group">
+            <label for="remarks">Remarks:</label>
+            <textarea id="remarks" name="remarks" placeholder=" Any additional remarks or notes.
+            "></textarea>
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+</div>
